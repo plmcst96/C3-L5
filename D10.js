@@ -501,7 +501,25 @@ const css = function () {
   ***
 
 */
+const halfTree = function (height) {
+  if (height < 1) {
+    console.log("Altezza non valida.");
+    return;
+  }
 
+  for (let i = 1; i <= height; i++) {
+    let row = "";
+
+    // Aggiungi asterischi alla riga corrente
+    for (let j = 0; j < i; j++) {
+      row += "*";
+    }
+
+    // Stampa la riga corrente
+    console.log(row);
+  }
+}
+console.log(halfTree(7))
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
