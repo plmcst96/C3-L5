@@ -214,7 +214,7 @@ console.log(deleteProp(myObj, 'age'))
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
-
+/* Questo array viene usato per gli esercizi. Non modificarlo. */
 const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
@@ -518,5 +518,5 @@ const css = function () {
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
+
 
