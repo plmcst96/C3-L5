@@ -506,16 +506,11 @@ const halfTree = function (height) {
     console.log("Altezza non valida.");
     return;
   }
-
   for (let i = 1; i <= height; i++) {
     let row = "";
-
-    // Aggiungi asterischi alla riga corrente
     for (let j = 0; j < i; j++) {
       row += "*";
     }
-
-    // Stampa la riga corrente
     console.log(row);
   }
 }
@@ -531,6 +526,15 @@ console.log(halfTree(7))
   *****
 
 */
+const tree = function (height) {
+
+  for (let i = 1; i <= height; i++) {
+    let spaces = ' '.repeat(height - i);
+    let stars = '*'.repeat(2 * i - 1);
+    console.log(spaces + stars);
+  }
+}
+console.log(tree(7))
 
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
